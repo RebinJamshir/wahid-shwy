@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wahad Shay - Full Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#f1c100",
+                    "inverse-primary": "#dcb8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f4ebf5",
+                    "on-background": "#1e1a21",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#574400",
+                    "primary": "#430078",
+                    "surface-bright": "#fff7ff",
+                    "inverse-surface": "#332f36",
+                    "primary-fixed-dim": "#dcb8ff",
+                    "secondary-fixed": "#ffe08a",
+                    "secondary-container": "#fdcc10",
+                    "on-tertiary-fixed": "#2b1700",
+                    "primary-fixed": "#efdbff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#602897",
+                    "tertiary": "#422600",
+                    "surface-dim": "#e0d7e1",
+                    "surface-light": "#F6F6F6",
+                    "on-primary-fixed": "#2b0052",
+                    "inverse-on-surface": "#f7eef8",
+                    "outline": "#7d7483",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e8e0ea",
+                    "tertiary-container": "#603a00",
+                    "on-tertiary-container": "#dca563",
+                    "surface-dark": "#222222",
+                    "surface-container-low": "#faf1fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#745b00",
+                    "pure-white": "#FFFFFF",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fff7ff",
+                    "on-primary-container": "#cb99ff",
+                    "on-secondary-container": "#6e5700",
+                    "on-secondary-fixed": "#241a00",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#7943b0",
+                    "on-surface": "#1e1a21",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#f5bc78",
+                    "outline-variant": "#cec3d3",
+                    "on-surface-variant": "#4b4451",
+                    "background": "#fff7ff",
+                    "primary-container": "#5b2392",
+                    "surface-container-highest": "#e8e0ea",
+                    "on-tertiary-fixed-variant": "#653e03",
+                    "tertiary-fixed": "#ffddb9",
+                    "surface-container-high": "#eee5ef"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "80px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "margin": "40px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "title-lg": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Montserrat"],
+                    "button-text": ["Montserrat"],
+                    "label-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "800"}],
+                    "title-lg": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "button-text": ["18px", {"lineHeight": "24px", "fontWeight": "700"}],
+                    "label-lg": ["16px", {"lineHeight": "20px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .active-pill {
+            background-color: #fdcc10;
+            color: #241a00;
+        }
+        .menu-card-shadow {
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container pb-20">
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin py-4 bg-primary shadow-md">
+<div class="flex items-center gap-2">
+<img alt="Wahad Shay logo" class="h-9 w-9 object-contain" src="images/logo.png"/>
+<h1 class="text-title-lg font-title-lg font-black text-pure-white tracking-tight">Wahad Shay</h1>
+</div>
+</header>
+<main class="pt-24 pb-4">
+<section class="px-margin mb-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Our Full Menu</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Authentic UAE flavors crafted with passion and fresh ingredients.</p>
+<div class="relative w-full mb-8">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full h-14 pl-12 pr-4 rounded-xl border-2 border-surface-variant bg-surface-light focus:border-primary focus:ring-0 font-body-md text-on-surface transition-all duration-200" placeholder="Search your favorite snack..." type="text"/>
+</div>
+</section>
+<nav class="sticky top-[72px] z-40 bg-background/95 backdrop-blur-md border-b border-surface-variant mb-stack-lg overflow-hidden">
+<div class="flex gap-4 px-margin py-4 overflow-x-auto hide-scrollbar">
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg active-pill transition-colors">All</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">Popular</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">Sandwiches</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">Wraps</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">Juices</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors">Desserts</button>
+</div>
+</nav>
+<section class="px-margin flex flex-col gap-8">
+<article class="bg-pure-white rounded-xl overflow-hidden menu-card-shadow transition-transform duration-300 hover:scale-[1.02]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Signature Shawarma Wrap" class="w-full h-full object-cover" src="images/mobile-menu-shawarma-wrap.jpg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Signature Shawarma Wrap</h3>
+<span class="font-label-lg text-label-lg text-primary bg-primary-fixed px-3 py-1 rounded-lg">AED 22</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Succulent marinated chicken, creamy garlic toum, and pickled cucumbers wrapped in freshly baked saj bread.</p>
+<div class="flex gap-2">
+<span class="text-[12px] font-bold uppercase tracking-wider text-secondary bg-secondary-fixed/30 px-2 py-1 rounded">Chef's Choice</span>
+<span class="text-[12px] font-bold uppercase tracking-wider text-on-tertiary-fixed-variant bg-tertiary-fixed/30 px-2 py-1 rounded">Spicy</span>
+</div>
+</div>
+</article>
+<article class="bg-pure-white rounded-xl overflow-hidden menu-card-shadow transition-transform duration-300 hover:scale-[1.02]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Golden Luqaimat" class="w-full h-full object-cover" src="images/mobile-dish-luqaimat.jpg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Golden Luqaimat</h3>
+<span class="font-label-lg text-label-lg text-primary bg-primary-fixed px-3 py-1 rounded-lg">AED 18</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Traditional Emirati sweet dumplings drizzled with rich date syrup and topped with toasted sesame seeds.</p>
+<div class="flex gap-2">
+<span class="text-[12px] font-bold uppercase tracking-wider text-secondary bg-secondary-fixed/30 px-2 py-1 rounded">Traditional</span>
+</div>
+</div>
+</article>
+<article class="bg-pure-white rounded-xl overflow-hidden menu-card-shadow transition-transform duration-300 hover:scale-[1.02]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Mango Oasis Cooler" class="w-full h-full object-cover" src="images/mobile-menu-mango-cooler.jpg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Mango Oasis Cooler</h3>
+<span class="font-label-lg text-label-lg text-primary bg-primary-fixed px-3 py-1 rounded-lg">AED 25</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">A refreshing blend of premium Alphonso mangoes and tropical passionfruit, served chilled for ultimate satisfaction.</p>
+<div class="flex gap-2">
+<span class="text-[12px] font-bold uppercase tracking-wider text-secondary bg-secondary-fixed/30 px-2 py-1 rounded">Seasonal</span>
+<span class="text-[12px] font-bold uppercase tracking-wider text-on-tertiary-fixed-variant bg-tertiary-fixed/30 px-2 py-1 rounded">Vegan</span>
+</div>
+</div>
+</article>
+<article class="bg-pure-white rounded-xl overflow-hidden menu-card-shadow transition-transform duration-300 hover:scale-[1.02]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Grilled Halloumi Bun" class="w-full h-full object-cover" src="images/mobile-menu-halloumi-bun.jpg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Grilled Halloumi Bun</h3>
+<span class="font-label-lg text-label-lg text-primary bg-primary-fixed px-3 py-1 rounded-lg">AED 28</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Golden grilled halloumi cheese, roasted peppers, and wild rocket on a buttery toasted brioche bun with pesto.</p>
+<div class="flex gap-2">
+<span class="text-[12px] font-bold uppercase tracking-wider text-secondary bg-secondary-fixed/30 px-2 py-1 rounded">Vegetarian</span>
+</div>
+</div>
+</article>
+</section>
+<footer class="mt-20 w-full px-margin py-stack-lg flex flex-col gap-stack-md bg-surface-dark text-on-secondary-fixed">
+<h2 class="text-headline-md font-black text-pure-white">Wahad Shay</h2>
+<div class="grid grid-cols-2 gap-4">
+<a class="font-label-lg text-surface-variant hover:text-pure-white transition-colors" href="about-mobile.html">Contact Us</a>
+<a class="font-label-lg text-surface-variant hover:text-pure-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-lg text-surface-variant hover:text-pure-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label-lg text-surface-variant hover:text-pure-white transition-colors" href="about-mobile.html">Location</a>
+</div>
+<p class="font-body-md text-surface-variant/60 mt-8">© 2026 Wahad Shay. Authentic UAE Flavors.</p>
+</footer>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-50 h-16 bg-primary flex justify-around items-center px-4">
+<a class="flex flex-col items-center gap-1 text-surface-variant hover:text-secondary-fixed transition-colors" href="home-mobile.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-secondary-fixed-dim border-b-2 border-secondary-fixed pb-1" href="menu-full-mobile.html">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-[10px] font-bold">Menu</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-surface-variant hover:text-secondary-fixed transition-colors" href="menu-categories-mobile.html">
+<span class="material-symbols-outlined">category</span>
+<span class="text-[10px] font-bold">Categories</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-surface-variant hover:text-secondary-fixed transition-colors" href="offers-mobile.html">
+<span class="material-symbols-outlined">local_offer</span>
+<span class="text-[10px] font-bold">Offers</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-surface-variant hover:text-secondary-fixed transition-colors" href="about-mobile.html">
+<span class="material-symbols-outlined">info</span>
+<span class="text-[10px] font-bold">About</span>
+</a>
+</nav>
+<script>
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('article');
+            cards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const desc = card.querySelector('p').innerText.toLowerCase();
+                if(title.includes(term) || desc.includes(term)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+        const categoryButtons = document.querySelectorAll('nav button');
+        categoryButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryButtons.forEach(b => {
+                    b.classList.remove('active-pill');
+                    b.classList.add('bg-surface-container', 'text-on-surface-variant');
+                });
+                btn.classList.add('active-pill');
+                btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>
